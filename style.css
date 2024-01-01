@@ -3,5 +3,74 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
+body{
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(#4d2323, #f70f0f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  background-color: rgb(48, 37, 37);
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  color: rgb(163, 142, 142);
+ 
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 3px solid black;
+  width: 100%;
+  height: 100%;
+}
+.grid-items{
+  border: 1px solid black;
+  background-color: rgb(134, 128, 128);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-items:hover{
+  background-color: inherit;
+}
+.prompt{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color:black;
+  margin: .25rem;
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+.answer{
+font-size: 1.5rem;
+height: 50%;
+width: 50%;
+text-align: center;
+
+}
+#box3, #box7, #box10, #box11, #box12, #box15{
+   border-left: 3px solid black;
+}
+ 
+#box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11{
+  border-bottom: 3px solid black;
+}
+
+@media only screen and (min-width: 998px){
+  html{
+    font-size: 24px;
+  }
+}
+  
+
+
